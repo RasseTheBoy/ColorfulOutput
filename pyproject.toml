@@ -6,7 +6,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ConsoleColors"
+name = "ColorfulOutput"
 version = "0.0.1"
 authors = [
   { name="Rasmus Ohert", email="rassemichael@gmail.com" },
@@ -25,4 +25,4 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/RasseTheBoy/ConsoleColors"
+Repository = "https://github.com/RasseTheBoy/ColorfulOutput"

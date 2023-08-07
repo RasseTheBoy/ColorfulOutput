@@ -1,8 +1,8 @@
-ConsoleColors
+ColorfulOutput
 =============
 
 <p align="center">
-    <img src="Images/Logo/ConsoleColorsLogo.png" width=500>
+    <img src="Images/Logo/ColorfulOutputLogo.png" width=500>
 </p>
 
 A python library that adds colors to your console prints.
@@ -14,9 +14,9 @@ A python library that adds colors to your console prints.
 # Installation
 
 ```bash
-pip install ConsoleColors
+pip install ColorfulOutput
 # or
-pip3 install ConsoleColors
+pip3 install ColorfulOutput
 ```
 
 # Usage
@@ -25,21 +25,21 @@ The library contains methods that you can use to color your **console** text.
 [**These "colored" strings should only be used for console prints, and not for anything else!**](#known-issues)
 
 ```python
-import ConsoleColors as cc
+import ColorfulOutput as cc
 
 text = cc.HEADER("Hello World!")
 print(text)
 ```
 
 ```python
-from ConsoleColors import BLUE, RED
+from ColorfulOutput import BLUE, RED
 
 print(BLUE("This is all blue text!"))
 print(RED("This is all red text!"))
 ```
 
 ```python
-from ConsoleColors import CYAN, YELLOW, RED, BOLD, UNDERLINE
+from ColorfulOutput import CYAN, YELLOW, RED, BOLD, UNDERLINE
 
 text = f'{BOLD("Never")} {YELLOW("gonna")} {UNDERLINE("give")} {RED("you")} {CYAN("up")}!'
 
@@ -66,7 +66,7 @@ The methods will return a text string that seems like a normal text to the conso
 This also means that when you use the `!r` format specifier, it will return a string with special characters instead of the actual text.
 
 ```python
-from ConsoleColors import BLUE
+from ColorfulOutput import BLUE
 
 clean_text = "Hello World!"
 color_text = BLUE(clean_text)
@@ -89,7 +89,7 @@ print(f'{color_text!r}')
 When you write the colored text to a file, it will write the special characters to the file instead of the actual text.
 
 ```python
-from ConsoleColors import BLUE
+from ColorfulOutput import BLUE
 
 clean_text = "Hello World!"
 color_text = BLUE(clean_text)
@@ -110,7 +110,7 @@ Hello World!
 The special characters will also be counted as characters when you use the `len()` function.
 
 ```python
-from ConsoleColors import BLUE
+from ColorfulOutput import BLUE
 
 clean_text = "Hello World!"
 color_text = BLUE(clean_text)
@@ -127,7 +127,7 @@ print(len(color_text))
 When you add multiple colors and styles to a string, it will not work as expected.
 
 ```python
-from ConsoleColors import BLUE, BOLD, UNDERLINE
+from ColorfulOutput import BLUE, BOLD, UNDERLINE
 
 text = BLUE("Hello ")
 text += BOLD("World!")
