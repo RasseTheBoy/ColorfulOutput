@@ -2,7 +2,7 @@ ConsoleColors
 =============
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/RasseTheBoy/ConsoleColors/main/Logo/ConsoleColorsLogo.png" width=300>
+    <img src="Images/Logo/ConsoleColorsLogo.png" width=500>
 </p>
 
 A python library that adds colors to your console prints.
@@ -122,9 +122,29 @@ print(len(color_text))
 # Output: 21
 ```
 
+## Adding multiple colors and styles
+
+When you add multiple colors and styles to a string, it will not work as expected.
+
+```python
+from ConsoleColors import BLUE, BOLD, UNDERLINE
+
+text = BLUE("Hello ")
+text += BOLD("World!")
+
+full_text = UNDERLINE(text)
+
+print(full_text)
+```
+
+`Console output:`  
+![Console output](Images/Other/invalid_output.png)
+
+
 # Workarounds
 
-The only workaround for these issues is to create separate "clean" and "color" variables.
+The only workaround for most of these issues is to create a "clean" string that only contains the text.  
+Then a separate "color" string that contains the text with the colors and styles.
 
 # Future
 
