@@ -2,16 +2,16 @@
 from typing import Any
 
 
-class bcolors:
+class colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
     CYAN = '\033[96m'
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
     RED = '\033[91m'
-    ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+    ENDC = '\033[0m'
 
 
 def HEADER(text:Any) -> str:
@@ -26,7 +26,7 @@ def HEADER(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.BLUE + str(text) + bcolors.ENDC
+    return colors.BLUE + str(text) + colors.ENDC
 
 
 def BLUE(text:Any) -> str:
@@ -41,7 +41,7 @@ def BLUE(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.BLUE + str(text) + bcolors.ENDC
+    return colors.BLUE + str(text) + colors.ENDC
 
 
 def CYAN(text:Any) -> str:
@@ -56,7 +56,7 @@ def CYAN(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.CYAN + str(text) + bcolors.ENDC
+    return colors.CYAN + str(text) + colors.ENDC
 
 
 def GREEN(text:Any) -> str:
@@ -71,7 +71,7 @@ def GREEN(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.GREEN + str(text) + bcolors.ENDC
+    return colors.GREEN + str(text) + colors.ENDC
 
 
 def YELLOW(text:Any) -> str:
@@ -86,7 +86,7 @@ def YELLOW(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.YELLOW + str(text) + bcolors.ENDC
+    return colors.YELLOW + str(text) + colors.ENDC
 
 
 def RED(text:Any) -> str:
@@ -101,7 +101,7 @@ def RED(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.RED + str(text) + bcolors.ENDC
+    return colors.RED + str(text) + colors.ENDC
 
 
 def BOLD(text:Any) -> str:
@@ -116,7 +116,7 @@ def BOLD(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.BOLD + str(text) + bcolors.ENDC
+    return colors.BOLD + str(text) + colors.ENDC
 
 
 def UNDERLINE(text:Any) -> str:
@@ -131,7 +131,7 @@ def UNDERLINE(text:Any) -> str:
     -------
     str
         The colored text"""
-    return bcolors.UNDERLINE + str(text) + bcolors.ENDC
+    return colors.UNDERLINE + str(text) + colors.ENDC
 
 
 if __name__ == "__main__":
