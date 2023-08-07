@@ -2,7 +2,7 @@ ColorfulOutput
 =============
 
 <p align="center">
-    <img src="Images/Logo/ColorfulOutputLogo.png" width=500>
+    <img src="https://github.com/RasseTheBoy/ColorfulOutput/blob/main/Images/Logo/ColorfulOutputLogo.png" width=500>
 </p>
 
 A python library that adds colors to your console prints.
@@ -138,7 +138,7 @@ print(full_text)
 ```
 
 `Console output:`  
-![Console output](Images/Other/invalid_output.png)
+![Console output](https://github.com/RasseTheBoy/ColorfulOutput/blob/main/Images/Other/invalid_output.png)
 
 
 # Workarounds
