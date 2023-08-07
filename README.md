@@ -143,7 +143,7 @@ print(full_text)
 
 # Workarounds
 
-The only workaround for most of these issues is to create a "clean" string that only contains the text.  
+The only workaround for most of these issues is to create a "clean" string that only contains the text (as shown in the examples above).  
 Then a separate "color" string that contains the text with the colors and styles.
 
 # Future
