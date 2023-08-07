@@ -25,9 +25,9 @@ The library contains methods that you can use to color your **console** text.
 [**These "colored" strings should only be used for console prints, and not for anything else!**](#known-issues)
 
 ```python
-import ColorfulOutput as cc
+import ColorfulOutput as co
 
-text = cc.HEADER("Hello World!")
+text = co.HEADER("Hello World!")
 print(text)
 ```
 
